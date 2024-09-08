@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Set lower case Github repository name
+      - name: Set lower case Github repository name - nowy komentarz testowy
         run: echo "GH_REPO_LC=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
         env:
             GITHUB_REPOSITORY: ${{ github.repository }}
